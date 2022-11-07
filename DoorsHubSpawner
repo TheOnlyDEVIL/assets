@@ -20,25 +20,7 @@ local CrocsTab = Window:CreateTab("Crocs", 11454503021)
 local CrucifixButton = OtherTab:CreateButton({
 	Name = "Give Crucifix",
 	Callback = function()
-				local shadow=game:GetObjects("rbxassetid://11480603603")[1]
-shadow.Parent = game.Players.LocalPlayer.Backpack
-local anim = Instance.new("Animation")
-anim.AnimationId = 'https://www.roblox.com/Assest?ID=9982615727'
-local track
- 
-shadow.Equipped:Connect(function()
-	track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(anim) 
-		track.Priority = Enum.AnimationPriority.Action
-		track:Play()
-		track.Looped = true
- 
-end)
- 
-shadow.Unequipped:Connect(function()
-	if track then
-		track:Stop()
-	end
-end)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Johnny39871/assets/main/crucifixo'))()
 	end,
 })
 local ScreechButton = SpawnTab:CreateButton({
@@ -186,7 +168,7 @@ task.wait(0.3)
 shadow:Destroy()
 elseif Option == "Eyes" then
     game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-    local enableDamage = true
+     local enableDamage = true
 repenttimes = 0
 local deadeyescrucifix = false
 local repentcomplete = false
@@ -202,8 +184,24 @@ eyes.Attachment.Eyes.Enabled = true
 eyes.whisper:Play()
 eyes.whisper.Looped = true
 function EyesHell()
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(10,30,0.7,0.1)
 ts = game:GetService("TweenService")
-
+wait(0.2)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(2,30,5,2)
 wait(3)
 
 eyes.Scream:Play()
@@ -238,7 +236,16 @@ while true do
         print("GET THAT AWAY FROM ME")
         eyes.Repent:Play()
         eyes.Attachment.Angry.Enabled = true
-        wait(1)
+        local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+
+camShake:ShakeOnce(5,50,0.7,0.2)
+        wait(0.7)
         repenttimes = repenttimes + 1
         print(repenttimes)
         eyes.Attachment.Angry.Enabled = false
@@ -268,6 +275,7 @@ while true do
 	task.wait(0.2)
 end
 
+	  	     
 	  	     end
 	end,
 })
@@ -275,7 +283,7 @@ local Paragraph = SpawnTab:CreateParagraph({Title = "NOTICE", Content = "The Cru
 local EyesButton = SpawnTab:CreateButton({
 	Name = "Spawn Eyes",
 	Callback = function()
-	local enableDamage = true
+  local enableDamage = true
 repenttimes = 0
 local deadeyescrucifix = false
 local repentcomplete = false
@@ -291,8 +299,24 @@ eyes.Attachment.Eyes.Enabled = true
 eyes.whisper:Play()
 eyes.whisper.Looped = true
 function EyesHell()
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(10,30,0.7,0.1)
 ts = game:GetService("TweenService")
-
+wait(0.2)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(2,30,5,2)
 wait(3)
 
 eyes.Scream:Play()
@@ -327,7 +351,16 @@ while true do
         print("GET THAT AWAY FROM ME")
         eyes.Repent:Play()
         eyes.Attachment.Angry.Enabled = true
-        wait(1)
+        local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+
+camShake:ShakeOnce(5,50,0.7,0.2)
+        wait(0.7)
         repenttimes = repenttimes + 1
         print(repenttimes)
         eyes.Attachment.Angry.Enabled = false
@@ -357,13 +390,14 @@ while true do
 	task.wait(0.2)
 end
 
+	  	     
 	end,
 })
 local EyesButton = OtherTab:CreateButton({
 	Name = "Spawn Eyes every room",
 	Callback = function()
 	    game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
-	local enableDamage = true
+  local enableDamage = true
 repenttimes = 0
 local deadeyescrucifix = false
 local repentcomplete = false
@@ -379,8 +413,24 @@ eyes.Attachment.Eyes.Enabled = true
 eyes.whisper:Play()
 eyes.whisper.Looped = true
 function EyesHell()
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(10,30,0.7,0.1)
 ts = game:GetService("TweenService")
-
+wait(0.2)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(2,30,5,2)
 wait(3)
 
 eyes.Scream:Play()
@@ -415,7 +465,16 @@ while true do
         print("GET THAT AWAY FROM ME")
         eyes.Repent:Play()
         eyes.Attachment.Angry.Enabled = true
-        wait(1)
+        local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+
+camShake:ShakeOnce(5,50,0.7,0.2)
+        wait(0.7)
         repenttimes = repenttimes + 1
         print(repenttimes)
         eyes.Attachment.Angry.Enabled = false
@@ -444,6 +503,7 @@ while true do
 	end
 	task.wait(0.2)
 end
+
 end)
 	end,
 })
