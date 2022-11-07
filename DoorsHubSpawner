@@ -750,6 +750,84 @@ CustomTab:CreateButton({
 	end,
 })
 CustomTab:CreateLabel("Label Example")
+OtherTab:CreateButton({
+	Name = "Get Skeleton Key",
+	Callback = function()
+	function skelly()
+    local DoorReplication = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Door%20Replication/Source.lua"))()
+
+
+-- Get current room
+local room = workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value]
+
+
+-- Replicate door
+local replicatedDoor = DoorReplication.ReplicateDoor(room, {
+    CustomKeyName = "Skeleton Key",
+    DestroyKey = false,
+})
+
+
+-- Debug features [advanced]
+replicatedDoor.Debug.OnDoorOpened = function(doorTable)
+    warn("Door", doorTable.Model, "has opened")
+end
+end
+local DoorReplication = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Door%20Replication/Source.lua"))()
+
+
+-- Get current room
+local room = workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value]
+
+
+-- Replicate door
+local replicatedDoor = DoorReplication.ReplicateDoor(room, {
+    CustomKeyName = "Skeleton Key",
+    DestroyKey = false,
+})
+
+
+-- Debug features [advanced]
+replicatedDoor.Debug.OnDoorOpened = function(doorTable)
+    warn("Door", doorTable.Model, "has opened")
+end
+		local shadow=game:GetObjects("rbxassetid://11491147151")[1]
+shadow.Parent = game.Players.LocalPlayer.Backpack
+local anim = Instance.new("Animation")
+local anim2 = Instance.new("Animation")
+anim.AnimationId = 'https://www.roblox.com/Assest?ID=6525854363'
+anim2.AnimationId = 'https://www.roblox.com/Assest?ID=10526835827'
+local track
+ 
+shadow.Equipped:Connect(function()
+	track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(anim) 
+		track.Priority = Enum.AnimationPriority.Action
+		track:Play()
+		track.Looped = false
+		wait(1.4)
+	track2 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(anim2) 
+		track2.Priority = Enum.AnimationPriority.Action
+		track2:Play()
+		track2.Looped = false
+ 
+end)
+ 
+shadow.Unequipped:Connect(function()
+	if track then
+		track:Stop()
+		track2:Stop()
+	end
+end)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
+    if workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door:FindFirstChild("Lock") then
+        print("YES KEY")
+   skelly()
+   else
+       print("no.")
+end
+end)
+	end,
+})
 
 
 CustomTab:CreateButton({
