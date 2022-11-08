@@ -278,7 +278,7 @@ Creator.runEntity = function(entity)
                     if entity.Config.CanKill and not Char.GetAttribute(Char, "Hiding") then
                         Connections[entity.Model].Movement:Disconnect()
         
-                        local shadow=game:GetObjects("rbxassetid://11500183547")[1]
+                        local shadow=game:GetObjects("rbxassetid://11500223493")[1]
 local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
 shadow.Parent = gui
 shadow.Visible = true
