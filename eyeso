@@ -1,12 +1,179 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.1.6) ~  Much Love, Ferib 
 
-]]--
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v20,v21)local v24={};for v37=1, #v20 do v6(v24,v0(v4(v1(v2(v20,v37,v37 + 1)),v1(v2(v21,1 + ((v37-1)% #v21),1 + ((v37-1)% #v21) + 1)))%256));end return v5(v24);end local v8=true;repenttimes=0 + 0;local v9=false;local v10=false;local v11=workspace.CurrentRooms[game:GetService(v7("\195\187\4\214\219\194\240\170\17\222\225\213\254\172\21\221\215","\145\222\116\186\178\161")).GameData.LatestRoom.Value];local v12=game:GetObjects(v7("\202\254\212\10\30\203\249\216\2\9\130\179\131\90\92\140\164\148\94\92\128\172\148\89","\184\156\172\107\109"))[1 + 0];local v13=math.floor( #v11.Nodes:GetChildren()/(2 + 0));v12.v14=(((v13==(1228 -(1111 + 117))) and v11.Base) or v11.Nodes[v13]).CFrame + Vector3.new(0 -0,2 + 5,0 + 0);v12.v15=workspace;v12.Initiate:Play();task.wait(0.5 + 0);v12.Attachment.Eyes.v16=true;v12.whisper:Play();v12.whisper.v17=true;function EyesHell()local v25=0 -0;local v26;local v27;local v28;local v29;while true do if (v25==0) then v26=928 -(497 + 431);v27=nil;v25=1;end if (v25==(1895 -(134 + 1759))) then while true do if (v26==(2 -1)) then local v40=0 -0;while true do if (v40==(2 -1)) then ts=game:GetService(v7("\101\44\12\117\209\36\84\41\31\121\220\18","\49\91\105\16\191\119"));wait(0.2 + 0);v40=2 -0;end if ((2 -0)==v40) then v26=2 + 0;break;end if (v40==0) then v29:Start();v29:ShakeOnce(1463 -(625 + 828),30,0.7 + 0,0.1 -0);v40=1683 -(445 + 1237);end end end if (v26==(0 + 0)) then local v41=0 + 0;while true do if (v41==(0 + 0)) then v27=require(game.ReplicatedStorage.CameraShaker);v27=require(game.ReplicatedStorage.CameraShaker);v41=3 -2;end if (v41==(1 + 0)) then v28=game.Workspace.CurrentCamera;v29=v27.new(Enum.RenderPriority.Camera.Value,function(v55)v28.v60=v28.CFrame * v55;end);v41=2;end if ((5 -3)==v41) then v26=966 -(588 + 377);break;end end end if (v26==(398 -(138 + 257))) then v29:Start();v29:ShakeOnce(9 -7,5 + 25,9 -4,1637 -(37 + 1598));wait(190 -(55 + 132));v12.Scream:Play();v26=1187 -(360 + 823);end if (v26==(2 + 2)) then ts:Create(v12,TweenInfo.new(328 -(79 + 244)),{[v7("\21\5\166\20\0\196","\86\67\212\117\109\161")]=v12.v14-Vector3.new(705 -(281 + 424),1579 -(399 + 1168),0 + 0)}):Play();wait(7);v12:Destroy();break;end if (v26==2) then local v42=0;while true do if (v42==2) then v26=1 + 2;break;end if ((155 -(47 + 107))==v42) then local v52=1282 -(1054 + 228);while true do if (0==v52) then v28=game.Workspace.CurrentCamera;v29=v27.new(Enum.RenderPriority.Camera.Value,function(v61)v28.v62=v28.CFrame * v61;end);v52=1475 -(358 + 1116);end if (v52==(1870 -(1199 + 670))) then v42=6 -4;break;end end end if (v42==(879 -(586 + 293))) then v27=require(game.ReplicatedStorage.CameraShaker);v27=require(game.ReplicatedStorage.CameraShaker);v42=1;end end end end break;end if (v25==1) then v28=nil;v29=nil;v25=2;end end end local v18=game:GetService(v7("\157\76\90\226\64\201\77","\205\32\59\155\37\187\62")).LocalPlayer.Character:FindFirstChildOfClass(v7("\192\64\188\14\230\70\41\128","\136\53\209\111\136\41\64\228"));local function v19(v22)local v30=0;local v31;local v32;local v33;local v34;local v35;local v36;while true do if (v30==(1651 -(181 + 1470))) then v31=0;v32=nil;v30=1;end if (v30==(1 + 0)) then local v38=0;while true do if (v38==0) then v33=nil;v34=nil;v38=1;end if (v38==(1 + 0)) then v30=2 + 0;break;end end end if (v30==(1871 -(125 + 1744))) then v35=nil;v36=nil;v30=1 + 2;end if (v30==3) then while true do if (v31==(1 + 0)) then local v43=0;while true do if (v43==(0 -0)) then v35=RaycastParams.new();v35.v53=Enum.RaycastFilterType.Blacklist;v43=1;end if (v43==1) then v31=32 -(7 + 23);break;end end end if (v31==(6 -3)) then return v34 and true and ((v36 and v36.Instance).Parent==game.Players.LocalPlayer.Character) and true;end if (v31==2) then v35.v44={v22};v36=workspace:Raycast(v22.Position,game.Players.LocalPlayer.Character.UpperTorso.Position-v22.Position,v35);v31=2 + 1;end if (v31==(0 + 0)) then local v45=0 + 0;local v46;while true do if (v45==(0 -0)) then v46=0;while true do if (v46==(255 -(163 + 91))) then v31=1266 -(92 + 1173);break;end if ((778 -(94 + 684))==v46) then v32,v33=workspace.CurrentCamera:WorldToViewportPoint(v22.Position);v34=v33 and (v32.Z>(0 -0));v46=1;end end break;end end end end break;end end end while true do local v23=0 -0;while true do if (v23==(1 + 0)) then task.wait(0.2);break;end if (v23==(0 + 0)) then if (workspace.CurrentRooms[game:GetService(v7("\213\63\44\180\193\237\241\255\226\62\15\172\199\252\241\236\226","\135\90\92\216\168\142\144\139")).GameData.LatestRoom.Value]~=v11) then local v39=0 + 0;while true do if (v39==(1 + 0)) then v12:Destroy();break;end if (v39==(0 + 0)) then v8=false;task.wait(0.2);v39=873 -(831 + 41);end end end if v8 then if ((v19(v12)) and  not game.Players.LocalPlayer.Character:FindFirstChild(v7("\148\87\20\249\138\34\190\93","\215\37\97\154\227\68")) and (v9==false)) then game.Players.LocalPlayer.Character.Humanoid.v47=game.Players.LocalPlayer.Character.Humanoid.Health-(37 -27);wait(0.2 + 0);elseif ((v19(v12)) and game.Players.LocalPlayer.Character:FindFirstChild(v7("\234\51\217\59\192\39\197\32","\169\65\172\88")) and (repenttimes<(4 + 1)) and (v9==false)) then print(v7("\215\129\253\251\196\140\232\143\176\133\254\154\201\228\239\137\223\137\137\150\213","\144\196\169\219"));v12.Repent:Play();v12.Attachment.Angry.v48=true;local v49=require(game.ReplicatedStorage.CameraShaker);local v49=require(game.ReplicatedStorage.CameraShaker);local v50=game.Workspace.CurrentCamera;local v51=v49.new(Enum.RenderPriority.Camera.Value,function(v54)v50.v56=v50.CFrame * v54;end);v51:Start();v51:ShakeOnce(1 + 4,27 + 23,0.7 + 0,40.2 -(14 + 26));wait(0.7 -0);repenttimes=repenttimes + 1 + 0;print(repenttimes);v12.Attachment.Angry.v48=false;wait(0.4 + 0);elseif (game.Players.LocalPlayer.Character:FindFirstChild(v7("\125\178\68\214\87\166\88\205","\62\192\49\181")) and (repenttimes==(14 -9)) and (v9==false)) then local v57=0 -0;local v58;local v59;while true do if (v57==1) then while true do if (v58==(325 -(18 + 306))) then v59.v63=workspace;v59:PivotTo(game.Players.LocalPlayer.Character:FindFirstChild(v7("\114\176\144\225\168\87\171\157","\49\194\229\130\193")).Handle.CFrame);v58=2 + 0;end if (v58==(3 -0)) then v8=false;if (v18.Health<=0) then local v65=0 -0;local v66;while true do if (v65==0) then v66=0;while true do if (v66==0) then game:GetService(v7("\138\69\167\64\54\54\185\84\178\72\12\33\183\82\182\75\58","\216\32\215\44\95\85")).GameStats[v7("\147\4\176\11\122\177\55","\195\104\209\114\31")   .. game.Players.LocalPlayer.Name].Total.DeathCause.Value=v7("\92\59\181\67","\25\66\208\48");debug.setupvalue(getconnections(game:GetService(v7("\121\161\63\5\8\72\165\59\12\5\120\176\32\27\0\76\161","\43\196\79\105\97")).Bricks.DeathHint.OnClientEvent)[906 -(305 + 600)].Function,4 -3,{v7("\128\38\61\123\189\32\45\63\249\61\39\123\173\33\45\123\156\48\45\40\247\103\102","\217\73\72\91"),v7("\233\222\65\238\20\62\191\66\154\194\4\251\93\49\181\12\201\217\4\245\81\122\163\88\220\196\65\243\20\59\164\2","\189\182\36\151\52\90\208\44")});break;end end break;end end end break;end if (v58==(410 -(267 + 141))) then game.Players.LocalPlayer.Character:FindFirstChild(v7("\40\90\97\12\2\78\125\23","\107\40\20\111")):Destroy();EyesHell();v58=3;end if (v58==(918 -(88 + 830))) then local v64=0 -0;while true do if (v64==(739 -(691 + 47))) then v58=1;break;end if (v64==(751 -(46 + 705))) then v59=game.Players.LocalPlayer.Character:FindFirstChild(v7("\244\93\27\84\81\167\174\146","\183\47\110\55\56\193\199\234")).Handle:Clone();v59.v67=true;v64=1 + 0;end end end end break;end if (v57==(0 + 0)) then v58=0;v59=nil;v57=1 -0;end end end end v23=1471 -(1006 + 464);end end end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local enableDamage = true
+repenttimes = 0
+local deadeyescrucifix = false
+local repentcomplete = false
+local currentLoadedRoom = workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value]
+local eyes = game:GetObjects("rbxassetid://11488518082")[1]
+local num = math.floor(#currentLoadedRoom.Nodes:GetChildren() / 2)
+eyes.CFrame = (num == 0 and currentLoadedRoom.Base or currentLoadedRoom.Nodes[num]).CFrame + Vector3.new(0, 7, 0)
+
+eyes.Parent = workspace
+eyes.Initiate:Play()
+task.wait(0.5)
+eyes.Attachment.Eyes.Enabled = true
+eyes.whisper:Play()
+eyes.whisper.Looped = true
+function EyesHell()
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(10,30,0.7,0.1)
+ts = game:GetService("TweenService")
+wait(0.2)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+camShake:ShakeOnce(2,30,5,2)
+wait(3)
+
+eyes.Scream:Play()
+ts:Create(eyes,TweenInfo.new(5),{CFrame = eyes.CFrame - Vector3.new(0,12,0)}):Play()
+wait(7)
+eyes:Destroy()
+end
+local hum = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+
+local function IsVisible(part)
+	local vec, found=workspace.CurrentCamera:WorldToViewportPoint(part.Position)
+	local onscreen = found and vec.Z > 0
+	local cfg = RaycastParams.new();
+	cfg.FilterType = Enum.RaycastFilterType.Blacklist
+	cfg.FilterDescendantsInstances = {part};
+
+	local cast = workspace:Raycast(part.Position, (game.Players.LocalPlayer.Character.UpperTorso.Position - part.Position), cfg);
+	return (onscreen and true) and ((cast and cast.Instance).Parent==game.Players.LocalPlayer.Character and true)
+end
+
+while true do
+	if workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value] ~= currentLoadedRoom then
+		enableDamage = false
+		task.wait(0.2)
+		eyes:Destroy()
+	end
+	if enableDamage then
+		if (IsVisible(eyes)) and not game.Players.LocalPlayer.Character:FindFirstChild("Crucifix") and deadeyescrucifix == false then
+		game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.Health - 10
+		wait(0.2)
+		elseif (IsVisible(eyes)) and game.Players.LocalPlayer.Character:FindFirstChild("Crucifix") and repenttimes < 5 and deadeyescrucifix == false then
+        print("GET THAT AWAY FROM ME")
+        eyes.Repent:Play()
+        eyes.Attachment.Angry.Enabled = true
+        local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+camara.CFrame = camara.CFrame * shakeCf
+end)
+camShake:Start()
+
+camShake:ShakeOnce(5,50,0.7,0.2)
+        wait(0.7)
+        repenttimes = repenttimes + 1
+        print(repenttimes)
+        eyes.Attachment.Angry.Enabled = false
+        wait(0.4)
+		elseif game.Players.LocalPlayer.Character:FindFirstChild("Crucifix") and repenttimes == 5 and deadeyescrucifix == false then
+		local hi = game.Players.LocalPlayer.Character:FindFirstChild("Crucifix").Handle:Clone()
+        hi.Anchored = true
+        hi.Parent = workspace
+        hi:PivotTo(game.Players.LocalPlayer.Character:FindFirstChild("Crucifix").Handle.CFrame)
+        game.Players.LocalPlayer.Character:FindFirstChild("Crucifix"):Destroy()
+        EyesHell()
+        enableDamage = false
+			if hum.Health <= 0 then
+				game:GetService("ReplicatedStorage").GameStats["Player_" .. game.Players.LocalPlayer.Name].Total.DeathCause.Value =
+					"Eyes"
+				debug.setupvalue(
+					getconnections(game:GetService("ReplicatedStorage").Bricks.DeathHint.OnClientEvent)[1].Function,
+					1,
+					{
+						"You died to the Eyes...",
+						"They don't like to be stared at.",
+					}
+				)
+			end
+		end
+	end
+	task.wait(0.2)
+end
+
+	  	     
