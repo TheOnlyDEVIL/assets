@@ -16,7 +16,7 @@ local SelfModules = {
 }
 
 local Assets = {
-    Door = game:GetObjects("rbxassetid://11661458107")[1],
+    Model = LoadCustomInstance("https://github.com/RegularVynixu/Utilities/blob/main/Doors/Door%20Replication/Door.rbxm?raw=true"),
 }
 
 local DoorReplication = {}
@@ -126,6 +126,17 @@ DoorReplication.CreateDoor = function(config)
 end
 
 DoorReplication.ReplicateDoor = function(doorTable)
+    -- Pre-check
+
+    if not doorTable.Model.Parent then
+        warn("Failure - Parent the door before replicating it")
+        return
+    
+    elseif doorTable.Config.Barricaded then
+        warn("Failure - Attempt to replicate a barricaded door")
+        return
+    end
+
     -- Guiding light
 
     if doorTable.Config.GuidingLight ~= false and doorTable.Model.Parent:GetAttribute("IsDark") then
