@@ -3,3 +3,4 @@ hi neon![Png (2)](https://user-images.githubusercontent.com/116474888/207443983-
 ## FR HARDCORE V2??
 ![image](https://user-images.githubusercontent.com/116474888/207444305-9bfe4e21-72a6-49fe-baed-97b479baa752.png)
 HARDMODE CONFIRMED !!
+###### Look up pwease
