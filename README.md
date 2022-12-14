@@ -14,3 +14,9 @@ LEAKED HARDMORE ENTITY
 
 # FOR SEANGAMING
 goofy ahh models your trying to steal here
+
+# MONOXIDE REVAMP
+
+![Capture](https://user-images.githubusercontent.com/116474888/207500452-21027015-1884-42fd-bb90-5655fa94c501.PNG)
+
+## MONOXIDE IS BETTER!
