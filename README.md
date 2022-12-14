@@ -11,3 +11,6 @@ HARDMODE CONFIRMED !!
 
 ![Capture](https://user-images.githubusercontent.com/116474888/207445997-52eb3ca2-e856-410c-be87-285b0563027c.PNG)
 LEAKED HARDMORE ENTITY
+
+# FOR SEANGAMING
+goofy ahh models your trying to steal here
