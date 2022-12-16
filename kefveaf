@@ -268,8 +268,20 @@ Spawner.runEntity = function(entityTable)
                         -- Death handling
                         
                         task.spawn(entityTable.Debug.OnDeath)
-                        Hum.Health = 0
+                        entityModel:SetAttribute("NoAI", true)
                         ReSt.GameStats["Player_".. Plr.Name].Total.DeathCause.Value = entityModel.Name
+                        
+local maingame = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+
+maingame.stopcam = true
+maingame.freemouse = false
+
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0}):Play()
+local cam = workspace.CurrentCamera
+local ccf = cam.CFrame
+cam.CameraType = Enum.CameraType.Scriptable
+tween:Create(cam, TweenInfo.new(0.2), {CFrame = CFrame.lookAt(ccf.p, entityModel.RushNew.Position)}):Play()
                         
                         if #entityTable.Config.CustomDialog > 0 then
                             firesignal(ReSt.Bricks.DeathHint.OnClientEvent, entityTable.Config.CustomDialog)
