@@ -277,15 +277,10 @@ maingame.stopcam = true
 maingame.freemouse = true
 
 local tween = game:GetService("TweenService")
-tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0}):Play()
 local cam = workspace.CurrentCamera
 local ccf = cam.CFrame
 cam.CameraType = Enum.CameraType.Scriptable
 tween:Create(cam, TweenInfo.new(0.2), {CFrame = CFrame.lookAt(ccf.p, entityModel.RushNew.Position)}):Play()
-entityModel.RushNew.Attachment.BlackTrail.TimeScale = 0
-entityModel.RushNew.Attachment.ParticleEmitter.TimeScale = 0
-entityModel.RushNew.Attachment.face.TimeScale = 0
-entityModel.RushNew.Lightning.ParticleEmitter.TimeScale = 0
                         
                         if #entityTable.Config.CustomDialog > 0 then
                             firesignal(ReSt.Bricks.DeathHint.OnClientEvent, entityTable.Config.CustomDialog)
