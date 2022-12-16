@@ -268,20 +268,7 @@ Spawner.runEntity = function(entityTable)
                         -- Death handling
                         
                         task.spawn(entityTable.Debug.OnDeath)
-                        entityModel:SetAttribute("NoAI", true")
-                        
-ModuleScripts.MainGame
-
-ModuleScripts.MainGame.stopcam = true
-ModuleScripts.MainGame.freemouse = false
-
-local tween = game:GetService("TweenService")
-tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0}):Play()
-local cam = workspace.CurrentCamera
-local ccf = cam.CFrame
-cam.CameraType = Enum.CameraType.Scriptable
-tween:Create(cam, TweenInfo.new(0.2), {CFrame = CFrame.lookAt(ccf.p, entityModel.RushNew.Position)}):Play()
-
+                        Hum.Health = 0
                         ReSt.GameStats["Player_".. Plr.Name].Total.DeathCause.Value = entityModel.Name
                         
                         if #entityTable.Config.CustomDialog > 0 then
