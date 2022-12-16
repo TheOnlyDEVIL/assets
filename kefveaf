@@ -269,8 +269,6 @@ Spawner.runEntity = function(entityTable)
                         
                         task.spawn(entityTable.Debug.OnDeath)
                         
-                           Connections[entityModel].Movement:Disconnect()
-                        Connections[entityModel].Drag:Disconnect()
                         entityModel:SetAttribute("StopMovement", true)
                         
 local maingame = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
