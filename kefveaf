@@ -274,7 +274,7 @@ Spawner.runEntity = function(entityTable)
 local maingame = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
 
 maingame.stopcam = true
-maingame.freemouse = false
+maingame.freemouse = true
 
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0}):Play()
