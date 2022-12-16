@@ -270,10 +270,10 @@ Spawner.runEntity = function(entityTable)
                         task.spawn(entityTable.Debug.OnDeath)
                         entityModel:SetAttribute("NoAI", true")
                         
-local maingame = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+ModuleScripts.MainGame
 
-maingame.stopcam = true
-maingame.freemouse = false
+ModuleScripts.MainGame.stopcam = true
+ModuleScripts.MainGame.freemouse = false
 
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0}):Play()
