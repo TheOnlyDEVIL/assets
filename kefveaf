@@ -285,6 +285,7 @@ tween:Create(cam, TweenInfo.new(0.2), {CFrame = CFrame.lookAt(ccf.p, entityModel
 entityModel.RushNew.Attachment.BlackTrail.TimeScale = 0
 entityModel.RushNew.Attachment.ParticleEmitter.TimeScale = 0
 entityModel.RushNew.Attachment.face.TimeScale = 0
+entityModel.RushNew.Lightning.ParticleEmitter.TimeScale = 0
                         
                         if #entityTable.Config.CustomDialog > 0 then
                             firesignal(ReSt.Bricks.DeathHint.OnClientEvent, entityTable.Config.CustomDialog)
